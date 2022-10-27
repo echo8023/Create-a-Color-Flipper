@@ -1,0 +1,144 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --clr-white: #fff;
+  --clr-grey-10: hsl(210, 36%, 96%);
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+* {
+  /*清除所有标签的初始内外边距*/
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--clr-grey-10);
+}
+
+ul {
+  list-style-type: none;
+  /* list-style: none; 去除列表格式，消除小黑点 */
+}
+a {
+  text-decoration: none; /*去掉下划线*/
+}
+
+/*
+=============== 
+Nav
+===============
+*/
+.nav-center {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-white);
+}
+
+h3 {
+  color: rgb(73, 166, 233);
+  width: 20rem; /*宽度200px*/
+  height: 3rem;
+  line-height: 3rem; /*行高30px*/
+  font-size: 2rem; /*字体大小20px*/
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-links li {
+  text-align: center; /*文本居中*/
+}
+
+.nav-links li .selected {
+  background-color: blue;
+}
+
+.nav-links li a {
+  display: block; /*块状显示，一块块的整齐*/
+  width: 10rem; /*每个宽度100px*/
+  height: 3rem;
+  line-height: 3rem; /*行高30px*/
+  color: rgb(6, 50, 81); /*内容颜色灰色*/
+  font-size: 2rem; /*字体大小20px*/
+}
+
+.nav-links li a:hover {
+  /* color: #999; */
+  color: rgb(73, 166, 233);
+}
+
+/*
+=============== 
+Container
+===============
+*/
+main {
+  width: 100%;
+  min-height: calc(100vh - 6rem);
+  /* background-color: var(--clr-bgColor); */
+  position: relative;
+  /* text-align: center; */
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.background-color {
+  background-color: black;
+  padding: 1rem;
+  color: var(--clr-white);
+  font-size: 5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 2rem;
+}
+.color {
+  color: rgb(73, 166, 233);
+}
+
+.btn-background {
+  width: 100%;
+}
+
+.btn {
+  text-transform: uppercase;
+  background: transparent;
+  display: inline-block;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.btn:hover {
+  background-color: black;
+  color: var(--clr-white);
+}
